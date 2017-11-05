@@ -36,6 +36,18 @@ Thats not much to talk here, the only configurations that are used in this scrip
 | ./salty dump |  creates a dump of the database specified on .env file as DB_DATABASE      |
 | ./salty create:db |  creates a database based on DB_DATABASE specified on .env file      |
 
+## Instalation
+You just need to download the salty script to you project folder.
+Wget:
+```
+cd [project_folder]
+wget https://raw.githubusercontent.com/namadnuno/Homestead-Salty/master/salty
+```
+CURL:
+```
+curl https://raw.githubusercontent.com/namadnuno/Homestead-Salty/master/salty --output salty
+```
+
 # Happy Hacking
 
 
