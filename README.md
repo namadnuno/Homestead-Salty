@@ -62,6 +62,7 @@ DIR="~/Code/${CURRENT_FOLDER}"
 
 ## Instalation
 You just need to download the salty script to you project folder.
+
 Wget:
 ```
 cd [project_folder]
