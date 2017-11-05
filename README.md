@@ -1,5 +1,5 @@
 # Homestead-Salty
-Simple way to comunicate with vagrant Homestead.
+Simple way to communicate with vagrant Homestead.
 
 ## Motivation
 
@@ -19,9 +19,10 @@ art route:list
 ```
 
 ## Configurations
-Thats not much to talk here, the only configurations that are used in this script is the .env file so if it is configured properlly everiting will work fine.
+Thats not much to talk here, the only configurations that are used in this script is the .env file so if it is configured properly everything will work fine.
+Your project files should be inside ~/Code folder on the homestead box in order this script to work.
 
-## What's avalable ?
+## What's available ?
 | Command       | Similar       |
 | ------------- |:-------------:|
 | ./salty artisan [args]     | same thing as 'php artisan' on homestead machine |
