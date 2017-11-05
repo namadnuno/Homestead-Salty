@@ -1,13 +1,19 @@
 #!/usr/bin/env bash
 
-# CONSTANTS WITH SETTINGS TO ACCESS VAGRANT
-CMD="ssh vagrant@192.168.10.10"
-
 # name of current directory
 CURRENT_FOLDER="$(basename `eval pwd`)"
 # directory inside vagrant
 DIR="~/Code/${CURRENT_FOLDER}"
 
+# Server ip address
+# By default the homested server ip is 192.168.10.10
+SERVER_IP="192.168.1.1"
+
+# Server Username
+# By default the homestead username is vagrant
+USER_NAME="vagrant"
+# CONSTANTS WITH SETTINGS TO ACCESS VAGRANT
+CMD="ssh ${USER_NAME}@${SERVER_IP}"
 # registers the ssh key in your system
 env=~/.ssh/agent.env
 
