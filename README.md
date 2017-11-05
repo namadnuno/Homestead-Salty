@@ -1,6 +1,8 @@
 # Homestead-Salty
 Simple way to communicate with vagrant Homestead.
 
+![salty example](https://i.imgur.com/NEree8o.png)
+
 ## Motivation
 
 After a while using vagrant ssh to enter to the homestead box and execute simple commands like 'art make controller' and such, i start noticing the waste of time doing vagrant ssh, after see the shipping-docker/vessel package where you can do the commands on you project directory and that will reflect on the server. I built a small script to do the same with laravel homestead.
@@ -70,6 +72,11 @@ CURL:
 curl https://raw.githubusercontent.com/namadnuno/Homestead-Salty/master/salty --output salty
 ```
 
+## Shortcuts
+For a simple daily usage you can set an alias on .bashrc, .zshrc or on aliases.shs (Windows, C:\Program Files\Git\etc\profile.d\aliases.sh).
+```
+alias salty="./salty "
+```
 # Happy Coding
 Give me some love [here!](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TATZK7AHTJP2E)
 
