@@ -62,6 +62,6 @@ CURL:
 curl https://raw.githubusercontent.com/namadnuno/Homestead-Salty/master/salty --output salty
 ```
 
-# Happy Hacking
+# Happy Coding
 
 
