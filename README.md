@@ -33,6 +33,14 @@ sites:
       to: /home/vagrant/Code/blog/public
     ...
 ```
+if you don't follow this convention you can change the path to you project defining the DIR variable on the salty script:
+```
+DIR="[path]/${CURRENT_FOLDER}"
+```
+Default:
+```
+DIR="~/Code/${CURRENT_FOLDER}"
+```
 > Note: The first time you run ```./salty ... ``` will be shown something like ```Enter passphrase for ~/.ssh/id_rsa: ``` , you have to give your password that you enter when you done ```ssh-keygen ``` command to configure homestead.
 
 ## What's available ?

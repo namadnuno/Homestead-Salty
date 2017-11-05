@@ -3,6 +3,11 @@
 # CONSTANTS WITH SETTINGS TO ACCESS VAGRANT
 CMD="ssh vagrant@192.168.10.10"
 
+# name of current directory
+CURRENT_FOLDER="$(basename `eval pwd`)"
+# directory inside vagrant
+DIR="~/Code/${CURRENT_FOLDER}"
+
 # registers the ssh key in your system
 env=~/.ssh/agent.env
 
@@ -26,11 +31,6 @@ fi
 
 unset env
 
-# name of current directory
-CURRENT_FOLDER="$(basename `eval pwd`)"
-
-# directory inside vagrant
-DIR="~/Code/${CURRENT_FOLDER}"
 
 # If any arguments passed...
 if [ $# -gt 0 ]; then
