@@ -5,16 +5,16 @@ Simple way to comunicate with vagrant Homestead.
 After a while using vagrant ssh to enter to the homestead box and execute simple commands like 'art make controller' and such, i start noticing the waste of time doing vagrant ssh, after see the shipping-docker/vessel package where you can do the commands on you project directory and that will reflect on the server. I built a small script to do the same with laravel homestead.
 
 ##Examples
-    ```
-    ./salty art route:list
-    ```
-    In this example we are doing the same as:
-    ```
-    cd Homestead
-    vagrant ssh
-    cd /Code/[project_folder]
-    art route:list
-    ```
+```
+./salty art route:list
+```
+In this example we are doing the same as:
+```
+cd Homestead
+vagrant ssh
+cd /Code/[project_folder]
+art route:list
+```
 
 ##Configurations
 Thats not much to talk here, the only configurations that are used in this script is the .env file so if it is configured properlly everiting will work fine.
