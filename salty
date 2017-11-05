@@ -7,7 +7,7 @@ DIR="~/Code/${CURRENT_FOLDER}"
 
 # Server ip address
 # By default the homested server ip is 192.168.10.10
-SERVER_IP="192.168.1.1"
+SERVER_IP="192.168.10.10"
 
 # Server Username
 # By default the homestead username is vagrant
