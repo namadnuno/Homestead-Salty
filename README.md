@@ -72,6 +72,9 @@ CURL:
 curl https://raw.githubusercontent.com/namadnuno/Homestead-Salty/master/salty --output salty
 ```
 
+## Support
+Right now i only have tested on windows with git-bash, but i will give feedback on Linux and Mac.
+
 ## Shortcuts
 For a simple daily usage you can set an alias on .bashrc, .zshrc or on aliases.shs (Windows, C:\Program Files\Git\etc\profile.d\aliases.sh).
 ```
