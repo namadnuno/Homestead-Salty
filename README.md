@@ -16,10 +16,10 @@ cd /Code/[project_folder]
 art route:list
 ```
 
-##Configurations
+## Configurations
 Thats not much to talk here, the only configurations that are used in this script is the .env file so if it is configured properlly everiting will work fine.
 
-##Whats avalable ?
+## What's avalable ?
 | Command       | Similar       |
 | ------------- |:-------------:|
 | ./salty artisan [args]     | same thing as 'php artisan' on homestead machine |
@@ -34,6 +34,6 @@ Thats not much to talk here, the only configurations that are used in this scrip
 | ./salty dump |  creates a dump of the database specified on .env file as DB_DATABASE      |
 | ./salty create:db |  creates a database based on DB_DATABASE specified on .env file      |
 
-#Happy Hacking
+# Happy Hacking
 
 
