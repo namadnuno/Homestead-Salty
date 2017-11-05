@@ -57,7 +57,7 @@ if [ $# -gt 0 ]; then
 
     # Access to phpunit on the project folder
     # short form 'p'
-    elif [ "$1" == "p" ] || [ "$1" == "test" ]; then
+    elif [ "$1" == "p" ] || [ "$1" == "phpunit" ]; then
         shift 1
         $CMD  "cd $DIR && ./vendor/bin/phpunit `echo "$@"`"
 
@@ -75,7 +75,7 @@ if [ $# -gt 0 ]; then
     # Access to artisan migrate command on the project folder
     elif [ "$1" == "migrate" ]; then
         shift 1
-        $CMD  "cd $DIR && art db:seed `echo "$@"`"
+        $CMD  "cd $DIR && art migrate `echo "$@"`"
 
     # Get dump of db to dump.sql file that will be created on the project folder
     elif [ "$1" == "dump" ]; then
