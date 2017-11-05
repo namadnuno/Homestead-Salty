@@ -33,6 +33,7 @@ sites:
       to: /home/vagrant/Code/blog/public
     ...
 ```
+Note: The first time you run ```./salty ... ``` will be shown something like ```Enter passphrase for ~/.ssh/id_rsa: ``` , you have to give your password that you enter when you done ```ssh-keygen ``` command to configure homestead.
 
 ## What's available ?
 | Command       | Similar       |
