@@ -81,7 +81,7 @@ if [ $# -gt 0 ]; then
     # Access to artisan migrate command on the project folder
     elif [ "$1" == "migrate" ]; then
         shift 1
-        $CMD  "cd $DIR && art migrate `echo "$@"`"
+        $CMD  "cd $DIR && artisan migrate `echo "$@"`"
 
     # Get dump of db to dump.sql file that will be created on the project folder
     elif [ "$1" == "dump" ]; then
