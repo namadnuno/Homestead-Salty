@@ -5,7 +5,7 @@ Simple way to communicate with vagrant Homestead.
 
 ## Motivation
 
-After a while using vagrant ssh to enter to the homestead box and execute simple commands like 'art make controller' and such, i start noticing the waste of time doing vagrant ssh, after see the shipping-docker/vessel package where you can do the commands on you project directory and that will reflect on the server. I built a small script to do the same with laravel homestead.
+After a while using 'vagrant ssh' to enter on the homestead box and execute simple commands like 'php artisan make:controller FooController' and such, i start noticing the waste of time doing that. After see the shipping-docker/vessel package where you can do the commands on you project directory and that will reflect on the server. I built a small script to do the same with Laravel homestead.
 
 
 ## Example
@@ -43,7 +43,7 @@ Default:
 ```
 DIR="~/Code/${CURRENT_FOLDER}"
 ```
-> Note: The first time you run ```./salty ... ``` will be shown something like ```Enter passphrase for ~/.ssh/id_rsa: ``` , you have to give your password that you enter when you done ```ssh-keygen ``` command to configure homestead.
+> Note: The first time you run ```./salty ... ``` will be shown something like ```Enter passphrase for ~/.ssh/id_rsa: ``` , you have to give your password that you enter when you done ```ssh-keygen ``` configure homestead.
 
 ## What's available ?
 | Command       | Similar       |
@@ -53,12 +53,15 @@ DIR="~/Code/${CURRENT_FOLDER}"
 | ./salty composer [args] | same thing as 'composer [args]' on homestead machine      |
 | ./salty comp [args] | short form to './salty composer [args]'      |
 | ./salty phpunit |  same thing as 'phpunit' on homestead machine      |
-| ./salty p [args] | short form to './salty phpunit [args]'     |
+| ./salty test [args] | short form to './salty phpunit [args]'     |
 | ./salty filter [args] |  same thing as 'phpunit --filter [args]' on homestead machine      |
 | ./salty pf [args] | short form to './salty phpunit --filter [args]'     |
+| ./salty migrate |  same thing as 'php artisan migrate' on homestead machine      |
 | ./salty seed |  same thing as 'php artisan db:seed' on homestead machine      |
 | ./salty dump |  creates a dump of the database specified on .env file as DB_DATABASE      |
 | ./salty create:db |  creates a database based on DB_DATABASE specified on .env file      |
+| ./salty npm |  runs npm on the server    |
+| ./salty watch |  same thing as 'npm run watch-poll' no the server     |
 
 ## Instalation
 You just need to download the salty script to you project folder.
@@ -70,6 +73,7 @@ wget https://raw.githubusercontent.com/namadnuno/Homestead-Salty/master/salty
 ```
 CURL:
 ```
+cd [project_folder]
 curl https://raw.githubusercontent.com/namadnuno/Homestead-Salty/master/salty --output salty
 ```
 
