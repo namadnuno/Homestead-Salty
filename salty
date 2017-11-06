@@ -76,12 +76,12 @@ if [ $# -gt 0 ]; then
     # Access to artisan db:seed command on the project folder
     elif [ "$1" == "seed" ]; then
         shift 1
-        $CMD  "cd $DIR && art db:seed `echo "$@"`"
+        $CMD  "cd $DIR && php artisan db:seed `echo "$@"`"
 
     # Access to artisan migrate command on the project folder
     elif [ "$1" == "migrate" ]; then
         shift 1
-        $CMD  "cd $DIR && artisan migrate `echo "$@"`"
+        $CMD  "cd $DIR && php artisan migrate `echo "$@"`"
 
     # Get dump of db to dump.sql file that will be created on the project folder
     elif [ "$1" == "dump" ]; then
