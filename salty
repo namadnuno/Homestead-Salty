@@ -63,7 +63,7 @@ if [ $# -gt 0 ]; then
 
     # Access to phpunit on the project folder
     # short form 'p'
-    elif [ "$1" == "p" ] || [ "$1" == "phpunit" ]; then
+    elif [ "$1" == "test" ] || [ "$1" == "phpunit" ]; then
         shift 1
         $CMD  "cd $DIR && ./vendor/bin/phpunit `echo "$@"`"
 
@@ -77,6 +77,16 @@ if [ $# -gt 0 ]; then
     elif [ "$1" == "seed" ]; then
         shift 1
         $CMD  "cd $DIR && php artisan db:seed `echo "$@"`"
+
+    # Access to npm command on the project folder
+    elif [ "$1" == "npm" ]; then
+       shift 1
+        $CMD  "cd $DIR && npm `echo "$@"`"
+
+    # Run npm watch
+    elif [ "$1" == "watch" ]; then
+       shift 1
+        $CMD  "cd $DIR && npm run watch-poll"
 
     # Access to artisan migrate command on the project folder
     elif [ "$1" == "migrate" ]; then
